@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    background: url("Assets/bg.jpg") no-repeat center/cover;
+
+} 
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7 );
+}
+
+nav{
+    position: relative;
+    top: 10px;
+    height: 12%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav button{
+    cursor: pointer;
+    padding:8px 30px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+nav button:first-child{
+    background-color: black;
+    color: white;
+    border: 2px solid gray;
+}
+
+nav button:nth-child(2){
+    background-color: red;
+    color: white;
+}
+
+main{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.cont{
+    text-align: center;
+    margin-top: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.cont h1{
+    font-size: 4rem;
+}
+
+.cont h3{
+    font-size: 1.2rem;
+}
+
+.cont p{
+    font-size: 1.1rem;
+}
+
+.cont .inbox{
+    height: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.cont input{
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.541);
+    font-size: 1.4rem;
+    padding: 15px 20px;
+}
+
+.cont button{
+    background: red;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 35px;
+}
+
+.cards{
+    padding: 20px;
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+}
+
+.card{
+    width: 15%;
+    height: 50%;
+    object-fit: cover;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.card img{
+    border: none;
+    border-radius: 10px;
+
+} 
+
+.faqs{
+    text-align: center;
+    padding: 30px;
+    min-height: 100vh;
+    height: auto;
+    color: white;
+    background-color: black;
+}
+
+.faqs h2{
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.buttons{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttons button{
+    border: none;
+    color: white;
+    text-align: start;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 30px 20px;
+    width: 85%;
+    border-radius: 5px;
+    background-color: rgb(28, 28, 28);
+    transition: background-color 0.5s ease;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+}
+
+footer{
+    height: 8vh;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px){
+
+    .cont{
+        width: 80%;
+    }
+    .cont h1{
+        font-size: 2.5rem;
+    }
+    .cont button{
+        margin: 5px;
+        padding: 15px 10px;
+        width: 300px;
+    }
+
+    .cards{
+        height: 50vh;
+    }
+
+    .faqs h2{
+        font-size: 1.5rem;
+        margin: 16px;
+    }
+
+    .buttons button{
+        font-size: 1rem;
+        padding: 20px;
+    }
+}
